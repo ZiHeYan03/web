@@ -1,0 +1,160 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 24px;
+}
+
+.divider{
+    font-size: 8px;
+    background-color: rgb(16, 16, 98);
+    position: relative;
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* This will put the .index and .info sections side by side */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.index-me {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: left;
+    max-width: 200px;
+}
+
+.index-me.active-me {
+    padding: 10px;
+    background-color: rgba(135, 147, 239, 0.2);
+    border-radius: 10px;
+    text-align: left;
+    max-width: 200px;
+}
+
+.index-work {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 5px;
+    max-width: 200px;
+}
+
+.index-work.active-work {
+    padding: 10px;
+    background-color: rgba(135, 147, 239, 0.2);
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 5px;
+    max-width: 200px;
+}
+
+.index-program {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 5px;
+    max-width: 200px;
+}
+
+.index-program.active-program {
+    padding: 10px;
+    background-color: rgba(135, 147, 239, 0.2);
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 5px;
+    max-width: 200px;
+}
+
+.index-course {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 5px;
+    max-width: 200px;
+}
+
+.index-course.active-course {
+    padding: 10px;
+    background-color: rgba(135, 147, 239, 0.2);
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 5px;
+    max-width: 200px;
+}
+
+.info{
+    flex: 1;
+    padding: 30px 100px;
+    text-align: left;
+}
+
+.info h2 {
+    font-size: 28px;
+    color: white; /* You can choose a color that matches your design */
+    margin-bottom: 10px; /* Add some spacing between the subheading and paragraphs */
+    text-decoration: underline;
+}
+
+/* Style the paragraphs */
+.info p {
+    font-size: 20px;
+    line-height: 1.5; /* Improve line spacing for readability */
+    margin-bottom: 20px; /* Add spacing between paragraphs */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+li {
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+li:hover {
+    opacity: 0.5;
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color:red;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 0.3s;
+}
+
+.fade-in.in-view {
+    opacity: 1;
+}
