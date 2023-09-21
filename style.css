@@ -158,3 +158,22 @@ a:hover{
 .fade-in.in-view {
     opacity: 1;
 }
+
+.profile-container {
+    display: flex; /* Use flexbox to arrange items horizontally */
+    align-items: center; /* Vertically align items in the center */
+    margin-bottom: 20px; /* Add spacing between profile text and other content */
+}
+
+/* Style the profile picture */
+.profile-picture {
+    max-width: 200px; /* Adjust the maximum width as needed */
+    border-radius: 10px; /* Optional: Add border-radius for a rounded look */
+}
+
+/* Style the profile text */
+.profile-text {
+    text-align: left; /* Align text to the left */
+    margin-left: 20px; /* Add spacing between text and picture */
+    font-size: 24px; /* Optional: Adjust the font size as needed */
+}
