@@ -18,7 +18,7 @@ p {
     font-size: 8px;
     background-color: rgb(16, 16, 98);
     position: relative;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .container {
@@ -30,11 +30,12 @@ p {
 .index {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    margin-left: 100px;
+    margin-top: 30px;
+    margin-left: 50px;
+    position: fixed;
 }
 
-.index-me {
+.index-me{
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
@@ -42,15 +43,7 @@ p {
     max-width: 200px;
 }
 
-.index-me.active-me {
-    padding: 10px;
-    background-color: rgba(135, 147, 239, 0.2);
-    border-radius: 10px;
-    text-align: left;
-    max-width: 200px;
-}
-
-.index-work {
+.index-work , .index-program, .index-interest, .index-course, .index-background, .index-robot{
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
@@ -59,55 +52,18 @@ p {
     max-width: 200px;
 }
 
-.index-work.active-work {
-    padding: 10px;
-    background-color: rgba(135, 147, 239, 0.2);
-    border-radius: 10px;
-    text-align: left;
-    margin-top: 5px;
-    max-width: 200px;
-}
 
-.index-program {
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    text-align: left;
-    margin-top: 5px;
-    max-width: 200px;
-}
 
-.index-program.active-program {
-    padding: 10px;
-    background-color: rgba(135, 147, 239, 0.2);
-    border-radius: 10px;
-    text-align: left;
-    margin-top: 5px;
-    max-width: 200px;
-}
-
-.index-course {
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    text-align: left;
-    margin-top: 5px;
-    max-width: 200px;
-}
-
-.index-course.active-course {
-    padding: 10px;
-    background-color: rgba(135, 147, 239, 0.2);
-    border-radius: 10px;
-    text-align: left;
-    margin-top: 5px;
-    max-width: 200px;
-}
-
-.info{
+/* .info{
     flex: 1;
     padding: 30px 100px;
     text-align: left;
+} */
+.info {
+    flex: 1;
+    padding: 30px 0; /* Removed left and right padding */
+    text-align: left;
+    margin-left: 380px; /* Adjust the margin to match the width of the index */
 }
 
 .info h2 {
